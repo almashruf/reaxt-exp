@@ -1,16 +1,22 @@
+import React, { useState } from 'react';
 function ClickExample() {
-    const handleClick = (event) => {
-        console.log("Event:", event); // Logs the event object
-        alert(`Button clicked: ${event.target.textContent}`);
-      };
-  
-    return (
-      <div>
-      <button onClick={handleClick}>Button 10</button>
-      <button onClick={handleClick}>Button 2</button>
-      </div>
-    );
-  }
+  const [text, setText] = React.useState("");
 
-  export default ClickExample;
-  
+  const handleChange = (event) => {
+    setText(event.target.value); // Update state with input value
+  };
+
+  return (
+    <div>
+      <input
+        type="text"
+        value={text}
+        onChange={handleChange}
+        placeholder="Type something..."
+      />
+      <p>You typed: {text}</p>
+    </div>
+  );
+}
+
+export default ClickExample;
