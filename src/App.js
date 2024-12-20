@@ -1,5 +1,6 @@
 import Counter from "./components/Counter";
 import Greeting from "./components/Greeting";
+import LoginForm from "./components/LoginForm";
 import UserCard from "./components/UserCard";
 import UserInfo from "./components/UserInfo";
 
@@ -18,6 +19,7 @@ function App() {
 
       <Counter/>
       <UserInfo/>
+      <LoginForm/>
     </div>
   );
 }
