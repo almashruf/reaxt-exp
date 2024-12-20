@@ -1,6 +1,7 @@
 import Counter from "./components/Counter";
 import Greeting from "./components/Greeting";
 import UserCard from "./components/UserCard";
+import UserInfo from "./components/UserInfo";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <UserCard name="Rakib3" email="rakib@gmail.com" phone={'01723045519'} />
 
       <Counter/>
+      <UserInfo/>
     </div>
   );
 }
