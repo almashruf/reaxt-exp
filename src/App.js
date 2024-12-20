@@ -1,3 +1,4 @@
+import Counter from "./components/Counter";
 import Greeting from "./components/Greeting";
 import UserCard from "./components/UserCard";
 
@@ -13,6 +14,8 @@ function App() {
       <UserCard name="Rakib1" email="rakib@gmail.com" phone={'01723045519'} />
       <UserCard name="Rakib2" email="rakib@gmail.com" phone={'01723045519'} />
       <UserCard name="Rakib3" email="rakib@gmail.com" phone={'01723045519'} />
+
+      <Counter/>
     </div>
   );
 }
